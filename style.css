@@ -16,7 +16,7 @@
       padding: 8rem 2rem 5rem;
       background: radial-gradient(circle at center, #fff 0%, #ffe6f9 50%, #e6f6ff 100%);
       box-shadow: 0 0 20px rgba(255, 182, 255, 0.5);
-      background-image: url(img/haikei2.png);
+      background-image: url(haikei2.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
