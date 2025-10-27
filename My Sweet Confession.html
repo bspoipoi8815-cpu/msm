@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Sweet Confession 公式</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="logoの画像" height="300px">
+    <p>~あなたの選択が、未来を変える~</p>
+  </header>
+
+  <section id="prologue">
+    <h2>プロローグ</h2>
+    <h1>「どうか、あの子とうまくいきますように。」</h1>
+    昨日、神様にひとつだけお願いをした。<br><br>
+    ――そして翌日。まるで祈りが届いたかのように、彼女からメッセージが届いた。<br>
+    「今日、親がいないんだ。……家に来ない？」<br>
+    胸の鼓動を抑えながら、約束の時間に間に合うよう急いで家を出た。けれど途中で、ふと気づく。<br><br>
+
+    ――ここは、どこだろう？<br><br>
+
+    道を間違えたのか、気づけば見知らぬ場所に立っていた。<br>
+    薄暗い部屋、漂う静けさ、その中心に、黒いスーツの男が立っていた。<br>
+    男は不気味に微笑み、こう告げた。<br><br>
+    「君を、彼女の家まで案内してあげよう。<strong>ただし――"代償"を支払ってもらう。</strong>」<br><br>
+
+    どうやら、神様への祈りがこの“迷い道”を生んだらしい。<br>
+    その代償とは、これから彼女と出会うたびに、"選択"を迫られること。<br>
+    選んだ言葉、選んだ行動、そのひとつひとつが運命を変えていく。<br>
+    正しい道を進めば、【二人】は結ばれる。<br><br>
+    だが、もし誤れば――……すべてを失うかもしれない。
+    </p>
+  </section>
+
+  <section id="concept">
+    <h2>コンセプト</h2>
+    <p>
+      ストーリー体験型恋愛RPイベント
+
+”告白(confession)"をテーマにした青春ストーリー体験RPイベントです。 貴方の選択によって二人の未来は変わります。 
+    </p>
+  </section>
+
+  <section id="characters">
+    <h2>ヒロイン紹介</h2>
+    <div class="characters">
+      <div class="char-card">
+        <img src="https://placehold.co/300x400/ffe6f9/ff69b4?text=リリア" alt="リリア">
+        <h3>そらりす</h3>
+        <p>頭の回転が速く、優しい心の持ち主。</p>
+        <p>よく相談に乗ってくれるが、いつも夜になるとどこかへ行ってしまう</p>
+      </div>
+      <div class="char-card">
+        <img src="https://placehold.co/300x400/e6f6ff/79d6ff?text=ミア" alt="ミア">
+        <h3>ジン</h3>
+        <p>涙の魔法を操る少女。優しさゆえに裁きを拒む。</p>
+      </div>
+      <div class="char-card">
+        <img src="https://placehold.co/300x400/ffe6f9/a4f2ff?text=セラ" alt="セラ">
+        <h3>かふぇねこ</h3>
+          関係性:友達以上恋人未満<br><br>
+           
+          メカクレ系美少女。<br>
+          ネガティブ思考だが自分だけに気を許してくれている。<br><br>
+          
+          夜は連絡が取れない。
+          
+
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 My Sweet Project
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if(rect.top < window.innerHeight * 0.8){
+          sec.classList.add("visible");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

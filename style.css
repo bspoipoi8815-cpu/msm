@@ -1,0 +1,121 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+    /* --- 基本設定 --- */
+    body {
+      margin: 0;
+      font-family: 'Zen Maru Gothic', sans-serif;
+      background: linear-gradient(180deg, #ffe6f9 0%, #e6f6ff 100%);
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 8rem 2rem 5rem;
+      background: radial-gradient(circle at center, #fff 0%, #ffe6f9 50%, #e6f6ff 100%);
+      box-shadow: 0 0 20px rgba(255, 182, 255, 0.5);
+      background-image: url(img/haikei2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    header h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 3rem;
+      color: #ff79c6;
+      text-shadow: 0 0 10px #ffd6f5, 0 0 30px #a4f2ff;
+    }
+
+    header p {
+      color: #ffffff;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 20px rgba(255, 182, 255, 0.3);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #ff69b4;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    section h2::before  {
+      content: "✧";
+      color: #a4f2ff;
+      margin-right: 0.5rem;
+    }
+
+    section h2::after  {
+      content: "✧";
+      color: #a4f2ff;
+      margin-left: 0.5rem;
+    }
+
+    section p {
+      text-align: left;
+    }
+
+    /* --- キャラクター紹介 --- */
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .char-card {
+      background: linear-gradient(180deg, #fff 0%, #ffe6f9 100%);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 182, 255, 0.4);
+      padding: 1rem;
+      
+      text-align: left;
+      transition: transform 0.3s;
+    }
+
+    .char-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .char-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .char-card h3 {
+      margin-top: 0.8rem;
+      color: #ff69b4;
+      font-size: 1.2rem;
+    }
+
+    .char-card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
