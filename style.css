@@ -9,16 +9,15 @@
       background: linear-gradient(180deg, #ffe6f9 0%, #e6f6ff 100%);
       color: #444;
       overflow-x: hidden;
+      background-image: url(img/haikei2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
     }
 
     header {
       text-align: center;
       padding: 8rem 2rem 5rem;
-      background: radial-gradient(circle at center, #fff 0%, #ffe6f9 50%, #e6f6ff 100%);
-      box-shadow: 0 0 20px rgba(255, 182, 255, 0.5);
-      background-image: url(haikei2.png);
-      background-repeat: no-repeat;
-      background-size: cover;
     }
     header h1 {
       font-family: 'Sacramento', cursive;
@@ -77,7 +76,7 @@
     /* --- キャラクター紹介 --- */
     .characters {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin-top: 2rem;
     }
@@ -116,6 +115,6 @@
       text-align: center;
       padding: 3rem;
       font-size: 0.9rem;
-      color: #999;
+      color: #ffffff;
     }
 
